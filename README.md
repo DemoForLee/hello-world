@@ -1,2 +1,1 @@
-# hello-world
-justTest
+#### this is my first program, i just trying.
