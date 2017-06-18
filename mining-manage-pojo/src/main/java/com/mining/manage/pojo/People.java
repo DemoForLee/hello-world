@@ -1,4 +1,4 @@
-package com.mining.main.pojo;
+package com.mining.manage.pojo;
 
 public class People {
 	private String name;

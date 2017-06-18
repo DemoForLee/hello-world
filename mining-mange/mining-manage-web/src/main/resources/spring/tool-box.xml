@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbox>
+	<tool>
+		<key>velocityTool</key>
+		<scope>application</scope>
+		<class>com.mining.manage.utils.VelocityTool</class>
+	</tool>
+	<!-- <tool>
+		<key>urlTool</key>
+		<scope>application</scope>
+		<class>com.banksteel.pop.web.utils.velocity.UrlTool</class>
+	</tool>
+	<tool>
+		<key>numberTool</key>
+		<scope>application</scope>
+		<class>com.banksteel.pop.web.utils.NumberTool</class>
+	</tool>
+	<tool>
+		<key>selectTool</key>
+		<scope>application</scope>
+		<class>com.banksteel.pop.web.utils.velocity.SelectTool</class>
+	</tool> -->
+</toolbox>

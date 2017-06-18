@@ -13,10 +13,9 @@
   	<module>mining-manage-poji</module>
   	<module>mining-manage-mapper</module>
   	<module>mining-manage-service</module>
-  	<module>mining-mgt</module>
-  	<module>mining-manage-mgt</module>
+  	<module>mining-manage-web</module>
   </modules>
-  
+
   <dependencies>
  		<dependency>
 			<groupId>junit</groupId>
@@ -42,6 +41,7 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
 		</dependency>
+		
   </dependencies>
   <build>
   <plugins>
