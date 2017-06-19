@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>  
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>����ʽ��¼�������</title>
+    <title>登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css" />
 
 	<style>
 	body{
@@ -95,8 +95,7 @@
 		top:0;
 	}
 	</style>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 </head>
 <body>
@@ -107,11 +106,11 @@
         <div class="loginpanel">
 			<i id="loading" class="hidden fa fa-spinner fa-spin bigicon"></i>
             <h2>
-				<span class="fa fa-quote-left "></span> ��¼ <span class="fa fa-quote-right "></span>
+				<span class="fa fa-quote-left "></span> 登录<span class="fa fa-quote-right "></span>
 			</h2>
             <div>
-                <input id="username" type="text" placeholder="��¼�˺�" onkeypress="check_values();">
-                <input id="password" type="password" placeholder="��������" onkeypress="check_values();">
+                <input id="username" type="text" placeholder="用户名" onkeypress="check_values();">
+                <input id="password" type="password" placeholder="密码" onkeypress="check_values();">
 
 				<div class="buttonwrapper">
 					<button id="loginbtn" class="btn btn-warning loginbutton">
@@ -123,7 +122,7 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="/js/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 
 
@@ -137,21 +136,28 @@
 			
 	$("#loginbtn").click(function(){
 		$('#loading').removeClass('hidden');
-		//������д��¼��غ�̨���?����: Ajax�����û����������֤
+		$.ajax({
+			url:"login_sys",
+			type:"post",
+			data:{"uName":$("#username").val(),"pwd":$("#password").val()},
+			success:function(result){
+				if(result==='success'){
+				}
+				if(result==='fail'){
+				}
+			}
+		});
 	});
 
 </script>
 
 <!-- Interactive Login - END -->
-
-</div>
-
 <div class="container-fluid">
 	<div class="row footerbox">
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
 		<footer class="text-center">
-			<a href="http://www.gbtags.com/gb/gbliblist/15.htm"><i class="fa fa-external-link"></i> ���˽���ο����� ���̷��ʻ�������ʽ�γ�</a>
+			<i class="fa fa-external-link"></i> 登录
 		</footer>
 		</div>
 		<div class="col-md-1"></div>
