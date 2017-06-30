@@ -10,7 +10,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-  	<module>mining-manage-poji</module>
+  	<module>mining-manage-pojo</module>
   	<module>mining-manage-mapper</module>
   	<module>mining-manage-service</module>
   	<module>mining-manage-web</module>
